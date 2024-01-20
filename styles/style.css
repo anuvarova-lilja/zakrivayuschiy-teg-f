@@ -15,6 +15,108 @@
 */
 
 .page {
+  box-sizing: border-box;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font, monospace);
+  color: var(--accent-color);
+  /* font-variation-settings:  */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 102px clamp(0rem, -8.1866rem + 34.9296vw, 23.25rem);
+}
+
+.header {
+  margin-bottom: 104px;
+}
+
+.header__logo {
+  text-transform: uppercase;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-family: var(--accent-font);
+  text-decoration: none;
+}
+
+.header_title {
+  font-family: var(--accent-font);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.theme-menu__list {
+  display: grid;
+  justify-content: center;
+  gap: 14px;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  margin: 25px;
+}
+
+.theme-menu__button {
+  position: relative;
+  text-transform: uppercase;  
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -20px;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  scale: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transform-origin: left;
+}
+
+.card {
+  width: var(--section-width);
+  border: 2px solid var(--accent-color);
+  position: relative;
+}
+
+.section_heading {
+  border: 2px solid var(--accent-color);
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.label {
+  color: var(--accent-color);
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: var(--Themes-background, #000);
+font-family: "Press Start 2P";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+  position: absolute;
+  background-blend-mode: hard-light;
+}
+
+.text-paragraph {
+  padding: 25px;
 }

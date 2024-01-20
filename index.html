@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -10,10 +11,15 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <!-- <link rel="icon" href="./images/favicon.ico" sizes="any" /> -->
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <!-- <link rel="icon" href="./images/mobile-icon.png" /> -->
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
+      <a class="header__logo" href="#0">&lt;/html&gt;</a>
+      <h1 class="header_title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +46,20 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="card__flow">
+      <section class="card">
+        <h2 class="section_heading">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div>
+          <img src="./images/image (1).png">
+          <p class="label">&lt;/html&gt;</p>
+        </div>
+        <p class='text-paragraph'>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+        <p class='text-paragraph'>Место для ваших воспоминаний о начале обучения.</p>
+        <button><3</button>
+        <span class="button__text">Like</span>
+      </section>
+    </main>
+    <footer><span class="button__text">Сохранить на память</span></footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
