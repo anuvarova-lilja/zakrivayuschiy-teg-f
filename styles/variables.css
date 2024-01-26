@@ -8,9 +8,9 @@
     --section-width: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
     --stroke-color: #000;
     --header-padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-    --header-padding: clamp(0.875rem, -1.4798rem + 10.0469vw, 7.5625rem);
     --sparks-color: #FF0000;
-    --font-color: #000;
+    --font-color: #00CC14;
     --bg-top: #007f0c;
     --bg-bottom: #004306;
+    --button-font-color: #00CC14;
 }
