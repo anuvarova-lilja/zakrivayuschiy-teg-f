@@ -71,15 +71,6 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: increase-heart 0.3s 0.1s ease-in;
-}
-
-.like-icon.is-liked .sparks {
-  animation: finish-sparks 0.3s 0.3s ease-in;
-}
-
 @keyframes increase-heart {
   from {
     scale: 1;
@@ -89,6 +80,12 @@
   }
 }
 
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: increase-heart 0.3s 0.1s ease-in;
+}
+
+
 @keyframes finish-sparks {
   from {
     opacity: 0;
@@ -96,4 +93,8 @@
   to {
     opacity: 1;
   }
+}
+
+.like-icon.is-liked .sparks {
+  animation: finish-sparks 0.3s 0.3s ease-in;
 }
