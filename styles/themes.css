@@ -18,6 +18,7 @@
   --bg-bottom: #1a1a1a;
   --button-font-color: #fff;
   --font-color: #000;
+  --stroke-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,11 +28,5 @@
     --bg-top: #e7e7e7;
     --bg-bottom: #1a1a1a;
     --button-font-color: #fff;
-  }
-
-  .button__text {
-    color: var(--button-font-color);
-    font-family: var(--accent-font);
-    mix-blend-mode: difference;
   }
 }

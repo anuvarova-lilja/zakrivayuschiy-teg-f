@@ -13,4 +13,11 @@
     --bg-top: #007f0c;
     --bg-bottom: #004306;
     --button-font-color: #00CC14;
+    --bg: repeating-linear-gradient(
+        to right,
+        var(--bg-color) 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(var(--bg-color) 0px 2px, transparent 2px 4px),
+      linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
 }

@@ -98,3 +98,10 @@
 .like-icon.is-liked .sparks {
   animation: finish-sparks 0.3s 0.3s ease-in;
 }
+
+@keyframes arrow-move {
+  to {
+    left: -16px;
+  }
+}
+

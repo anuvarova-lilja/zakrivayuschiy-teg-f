@@ -18,7 +18,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="header__logo" href="#0">&lt;/html&gt;</a>
+      <a class="header__logo">&lt;/html&gt;</a>
       <h1 class="header_title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -58,7 +58,7 @@
             loading="lazy"
             class="depiction blur"
           />
-          <p class="label">&lt;/HTML&gt;</p>
+          <span class="label">&lt;/HTML&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -116,7 +116,7 @@
             loading="lazy"
             class="depiction brightness"
           />
-          <p class="label">&lt;/HTML&gt;</p>
+          <span class="label">&lt;/HTML&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -179,7 +179,7 @@
             loading="lazy"
             class="depiction contrast"
           />
-          <p class="label">&lt;css&gt;</p>
+          <span class="label">&lt;css&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -238,7 +238,7 @@
             alt="Лягушка выглядывает из воды."
             class="depiction grayscale"
           />
-          <p class="label">&lt;desigions&gt;</p>
+          <span class="label">&lt;desigions&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -300,7 +300,7 @@
             loading="lazy"
             class="depiction sepia"
           />
-          <p class="label">care</p>
+          <span class="label">care</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -363,7 +363,7 @@
             loading="lazy"
             class="depiction saturate"
           />
-          <p class="label">&lt;support&gt;</p>
+          <span class="label">&lt;support&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -424,7 +424,7 @@
             loading="lazy"
             class="depiction hue-rotate"
           />
-          <p class="label">&lt;lifes-style: none;&gt;</p>
+          <span class="label">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -486,7 +486,7 @@
             loading="lazy"
             class="depiction opacity"
           />
-          <p class="label">&lt;experience&gt;</p>
+          <span class="label">&lt;experience&gt;</span>
         </div>
         <div class="description-block">
           <p class="text-paragraph">
@@ -561,7 +561,6 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-id">
-        <div class="dialog">
           <div class="box">
             <svg
               class="floppy-icon floppy-large"
@@ -572,15 +571,16 @@
             >
               <use href="./svg/floppy-symbol.svg#floppy"></use>
             </svg>
-            <span class="button__text">Вставьте дискету, чтобы продолжить</span>
+            <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
           </div>
-          <button
-            type="button"
-            onclick="window['dialog-id'].close()"
-            class="ok__button"
-          >
-            <span class="button__text">ok</span>
-          </button>
+          <form method="dialog">
+            <button
+              type="submit"
+              class="ok__button"
+            >
+              <span class="button__text">ok</span>
+            </button>
+          </form>
         </div>
       </dialog>
     </footer>
