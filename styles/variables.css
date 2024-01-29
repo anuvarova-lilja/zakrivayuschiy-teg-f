@@ -1,23 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --accent-font: 'PressStart2P';
-    --main-font: 'Inter';
-    --bg-color: #000;
-    --accent-color: #00CC14;
-    --section-width: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
-    --stroke-color: #000;
-    --header-padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-    --sparks-color: #FF0000;
-    --font-color: #00CC14;
-    --bg-top: #007f0c;
-    --bg-bottom: #004306;
-    --button-font-color: #00CC14;
-    --bg: repeating-linear-gradient(
-        to right,
-        var(--bg-color) 0px 2px,
-        transparent 2px 4px
-      ),
-      repeating-linear-gradient(var(--bg-color) 0px 2px, transparent 2px 4px),
-      linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
+  --accent-font: "PressStart2P";
+  --main-font: "Inter";
+  --bg-color: #000;
+  --bg-gradient-color: #000;
+  --accent-color: #00cc14;
+  --stroke-color: #000;
+  --header-padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  --sparks-color: #ff0000;
+  --font-color: #00cc14;
+  --bg-top: #007f0c;
+  --bg-bottom: #004306;
+  --button-font-color: #00cc14;
+  --bg: repeating-linear-gradient(
+      to right,
+      var(--bg-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      var(--bg-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
 }

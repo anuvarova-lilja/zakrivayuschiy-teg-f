@@ -6,27 +6,70 @@
 */
 
 :root.theme-dark {
+  --accent-font: "PressStart2P";
+  --main-font: "Inter";
   --bg-color: #000;
+  --bg-gradient-color: #000;
   --accent-color: #00cc14;
+  --stroke-color: #000;
+  --header-padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  --sparks-color: #ff0000;
+  --font-color: #00cc14;
+  --bg-top: #007f0c;
+  --bg-bottom: #004306;
   --button-font-color: #00cc14;
+  --bg: repeating-linear-gradient(
+      to right,
+      var(--bg-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      var(--bg-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(to bottom, var(--bg-top), var(--bg-bottom));
 }
 
 :root.theme-light {
   --bg-color: #fff;
+  --bg-gradient-color: #d3d3d3;
   --accent-color: #000;
   --bg-top: #e7e7e7;
   --bg-bottom: #1a1a1a;
   --button-font-color: #fff;
   --font-color: #000;
   --stroke-color: #fff;
+  --bg: repeating-linear-gradient(
+      to right,
+      var(--bg-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      var(--bg-gradient-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(to bottom, var(--bg-top) 0.01%, var(--bg-bottom));
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff;
+    --bg-gradient-color: #d3d3d3;
     --accent-color: #000;
     --bg-top: #e7e7e7;
     --bg-bottom: #1a1a1a;
     --button-font-color: #fff;
+    --font-color: #000;
+    --stroke-color: #fff;
+    --bg: repeating-linear-gradient(
+        to right,
+        var(--bg-gradient-color) 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(
+        var(--bg-gradient-color) 0px 2px,
+        transparent 2px 4px
+      ),
+      linear-gradient(to bottom, var(--bg-top) 0.01%, var(--bg-bottom));
   }
 }
