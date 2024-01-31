@@ -245,7 +245,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
+  outline: 2px solid var(--accent-color);
   border: none;
 }
 
@@ -359,7 +359,7 @@ dialog::backdrop {
 
 .dialog__title {
   text-transform: uppercase;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   color: var(--accent-color, #000);
   font-size: 14px;
   font-weight: 400;
@@ -385,5 +385,15 @@ dialog::backdrop {
 @media (width <= 375px) {
   .save__button {
     flex-direction: column;
+  }
+  .label {
+    right: 11px;
+  }
+  dialog[open] {
+    max-inline-size: 341px;
+  }
+  .floppy-save {
+    width: 28px;
+    height: auto;
   }
 }
