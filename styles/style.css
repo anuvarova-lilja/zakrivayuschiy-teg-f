@@ -11,11 +11,6 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-}
-
-.page {
   box-sizing: border-box;
   min-inline-size: 320px;
   min-block-size: 100dvb;
