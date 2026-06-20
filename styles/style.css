@@ -160,13 +160,27 @@
 .button__container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
   padding-top: 25px;
 }
 
 .card__icon-button {
-  cursor: pointer;
-  background-color: inherit;
   border: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  height: 38px; 
+  width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button .like-icon {
+  margin: auto;
+  display: block; 
 }
 
 .card__icon-button:focus {
@@ -181,7 +195,7 @@
 
 .card__icon-button:active {
   outline: none;
-  border: none;
+  border-color: transparent;
 }
 
 .button {
@@ -227,6 +241,10 @@
 
 .card__like-button {
   width: 130px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .floppy-icon {
@@ -302,6 +320,13 @@
 }
 
 @media (width <= 375px) {
+  .header {
+    padding: 122px 16px;
+  }
+
+  .label {
+    right: 25px;
+  }
   .save-container {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -310,11 +335,7 @@
   .save__button {
     flex-direction: column;
   }
-
-  .label {
-    right: 11px;
-  }
-
+  
   .dialog[open] {
     max-inline-size: 341px;
   }
