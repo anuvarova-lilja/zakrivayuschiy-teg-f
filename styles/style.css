@@ -35,7 +35,7 @@
   margin-bottom: 95px;
   border: 2px solid var(--accent-color);
   padding-top: var(--header-padding-top);
-  padding-bottom: 130px;
+  padding-bottom: 128px;
   inline-size: clamp(23.188rem, 16.138rem + 30.402vw, 43.5rem);
 }
 
@@ -179,7 +179,7 @@
 
 .card__icon-button .like-icon {
   margin: auto;
-  display: block; 
+  display: block;
 }
 
 .card__icon-button:focus {
