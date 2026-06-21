@@ -337,7 +337,7 @@
   
   .dialog[open] {
     max-inline-size: 341px;
-    padding: 30px 40px; 
+    padding: 30px 40px;
     gap: 30px;
   }
   
